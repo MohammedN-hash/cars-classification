@@ -1,0 +1,70 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/navigationbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+</head>
+
+<body>
+
+    <script src="./static/js/index.js"></script>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div style="padding-left:16px">
+        <h2>Write your license to see the car details and find if the car is eco-friendly</h2>
+        <p>Eco-friendly scale if from 1 to 10, Where 1 is good for the environment</p>
+    </div>
+
+
+    <input type="text" id="License" name="License">
+    <button class="search" onclick="SendLicense()">Search</button>
+
+
+
+
+
+    <p id="result" style = "display:none"></p>
+    <table id="car_details" style = "display:none">
+
+        <tr>
+            <th>column</th>
+            <th>value</th>
+        </tr>
+
+        <tr>
+            <td id="European_vehicle_category_c"></td>
+            <td id="European_vehicle_category_v"></td>
+        </tr>
+
+
+        <tr>
+            <td id="Fuel_consumption_combined_c"></td>
+            <td id="Fuel_consumption_combined_v"></td>
+        </tr>
+
+        <tr>
+            <td id="CO2_emissions_combined_c"></td>
+            <td id="CO2_emissions_combined_v"></td>
+        </tr>
+
+        <tr>
+            <td id="soorted_cluster_c"></td>
+            <td id="soorted_cluster_v"></td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
